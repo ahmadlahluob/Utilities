@@ -1,0 +1,10 @@
+{
+  "name": "com.riseofarabs.devtools.utilities",
+  "displayName": "Utilities",
+  "version": "0.4.0",
+  "unity": "2019.4",
+  "keywords": [ "Utilities", "Extensions", "Extension methods", "Methods", "DevTools", "Rise of Arabs", "ROA" ],
+  "description": "Collection of extension methods to make your developement journey easier.",
+  "dependencies": {
+  }
+}
