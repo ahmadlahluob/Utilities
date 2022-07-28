@@ -31,6 +31,14 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
         #endregion
 
         #region Shortcuts
+        public static void With_ref(this ref Vector2Int _v2, int? _x, int? _y) => new Vector2Int( _x ?? _v2.x, _y ?? _v2.y );
+        public static void With_ref(this ref Vector2Int _v2, byte? _x, byte? _y) => new Vector2Int( _x ?? _v2.x, _y ?? _v2.y );
+        
+        public static void WithX_ref(this ref Vector2Int _v2, int _x) => new Vector2Int( _x, _v2.y );
+        public static void WithX_ref(this ref Vector2Int _v2, byte _x) => new Vector2Int( _x, _v2.y );
+
+        public static void WithY_ref(this ref Vector2Int _v2, int _y) => new Vector2Int( _v2.x, _y );
+        public static void WithY_ref(this ref Vector2Int _v2, byte _y) => new Vector2Int( _v2.x, _y );
 
         #region Nullables
         public static Vector2Int With(this Vector2Int _v2, int? _x, int? _y) => new Vector2Int( _x ?? _v2.x, _y ?? _v2.y );
