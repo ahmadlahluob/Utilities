@@ -39,7 +39,18 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
         #endregion
 
         #region Shortcuts
+        public static void With_ref(this ref Vector2 _v2, float? _x, float? _y) => new Vector2( _x ?? _v2.x, _y ?? _v2.y );
+        public static void With_ref(this ref Vector2 _v2, int? _x, int? _y) => new Vector2( _x ?? _v2.x, _y ?? _v2.y );
+        public static void With_ref(this ref Vector2 _v2, byte? _x, byte? _y) => new Vector2( _x ?? _v2.x, _y ?? _v2.y );
+        
+        public static void WithX_ref(this ref Vector2 _v2, float _x) => new Vector2( _x, _v2.y );
+        public static void WithX_ref(this ref Vector2 _v2, int _x) => new Vector2( _x, _v2.y );
+        public static void WithX_ref(this ref Vector2 _v2, byte _x) => new Vector2( _x, _v2.y );
 
+        public static void WithY_ref(this ref Vector2 _v2, float _y) => new Vector2( _v2.x, _y );
+        public static void WithY_ref(this ref Vector2 _v2, int _y) => new Vector2( _v2.x, _y );
+        public static void WithY_ref(this ref Vector2 _v2, byte _y) => new Vector2( _v2.x, _y );
+        
         #region Nullables
         public static Vector2 With(this Vector2 _v2, float? _x, float? _y) => new Vector2( _x ?? _v2.x, _y ?? _v2.y );
         public static Vector2 With(this Vector2 _v2, int? _x, int? _y) => new Vector2( _x ?? _v2.x, _y ?? _v2.y );
