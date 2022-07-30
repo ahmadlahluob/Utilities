@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RiseOfArabs.Utilities.NumbersExtensions
+namespace RiseOfArabs.DevTool.Utilities.NumbersExtensions
 {
     /// <summary>Extension mesthods class for <see cref="byte"/></summary>
     public static class Byte_Xs

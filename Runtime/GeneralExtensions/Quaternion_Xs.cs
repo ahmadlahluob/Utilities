@@ -1,7 +1,7 @@
-using RiseOfArabs.Utilities.NumbersExtensions;
+using RiseOfArabs.DevTool.Utilities.NumbersExtensions;
 using UnityEngine;
 
-namespace RiseOfArabs.Utilities
+namespace RiseOfArabs.DevTool.Utilities
 {
     /// <summary>Extension mesthods class for <see cref="Quaternion"/></summary>
     public static class Quaternion_Xs

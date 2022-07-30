@@ -1,8 +1,8 @@
-using RiseOfArabs.Utilities.NumbersExtensions;
+using RiseOfArabs.DevTool.Utilities.NumbersExtensions;
 using UnityEngine;
-using static RiseOfArabs.Utilities.NumbersExtensions.Int_Xs;
+using static RiseOfArabs.DevTool.Utilities.NumbersExtensions.Int_Xs;
 
-namespace RiseOfArabs.Utilities.VectorsExtensions
+namespace RiseOfArabs.DevTool.Utilities.VectorsExtensions
 {
     /// <summary>Extension mesthods class for <see cref="Vector2Int"/></summary>
     public static class Vector2IntInt_Xs

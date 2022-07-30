@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RiseOfArabs.Utilities.Randoms
+namespace RiseOfArabs.DevTool.Utilities.Randoms
 {
     public static class Float
     {

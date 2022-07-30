@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 
-namespace RiseOfArabs.Utilities
+namespace RiseOfArabs.DevTool.Utilities
 {
     /// <summary>Extension mesthods class for <see cref="System.Collections"/> and <see cref="System.Collections.Generic"/></summary>
     public static class Collections_Xs

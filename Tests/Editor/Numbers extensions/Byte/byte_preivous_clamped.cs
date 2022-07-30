@@ -1,7 +1,7 @@
 ﻿using NUnit.Framework;
 using static NUnit.Framework.Assert;
 
-namespace RiseOfArabs.Utilities.NumbersExtensions.Tests
+namespace RiseOfArabs.DevTool.Utilities.NumbersExtensions.Tests
 {
     public static class byte_preivous_clamped
     {

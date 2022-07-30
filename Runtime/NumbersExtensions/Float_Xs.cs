@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RiseOfArabs.Utilities.NumbersExtensions
+namespace RiseOfArabs.DevTool.Utilities.NumbersExtensions
 {
     /// <summary>Extension mesthods class for <see cref="float"/></summary>
     public static class Float_Xs
