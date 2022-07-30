@@ -1,4 +1,4 @@
-﻿using UnityEngine;
+using UnityEngine;
 using static RiseOfArabs.Utilities.NumbersExtensions.Float_Xs;
 
 namespace RiseOfArabs.Utilities.VectorsExtensions
@@ -41,36 +41,71 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
 
         #region Nullables
         public static Vector3 With(this Vector3 _v3, float? _x, float? _y, float? _z) => new Vector3( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
+        public static void With_ref(this ref Vector3 _v3, float? _x, float? _y, float? _z) => new Vector3( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
+        
         public static Vector3 With(this Vector3 _v3, int? _x, int? _y, int? _z) => new Vector3( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
+        public static void With_ref(this ref Vector3 _v3, int? _x, int? _y, int? _z) => new Vector3( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
+        
         public static Vector3 With(this Vector3 _v3, byte? _x, byte? _y, byte? _z) => new Vector3( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
+        public static void With_ref(this ref Vector3 _v3, byte? _x, byte? _y, byte? _z) => new Vector3( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
         #endregion
 
         #region Singles
         public static Vector3 WithX(this Vector3 _v3, float _x) => new Vector3( _x, _v3.y, _v3.z );
+        public static void WithX_ref(this ref Vector3 _v3, float _x) => new Vector3( _x, _v3.y, _v3.z );
+        
         public static Vector3 WithX(this Vector3 _v3, int _x) => new Vector3( _x, _v3.y, _v3.z );
+        public static void WithX_ref(this ref Vector3 _v3, int _x) => new Vector3( _x, _v3.y, _v3.z );
+        
         public static Vector3 WithX(this Vector3 _v3, byte _x) => new Vector3( _x, _v3.y, _v3.z );
+        public static void WithX_ref(this ref Vector3 _v3, byte _x) => new Vector3( _x, _v3.y, _v3.z );
 
         public static Vector3 WithY(this Vector3 _v3, float _y) => new Vector3( _v3.x, _y, _v3.z );
+        public static void WithY_ref(this ref Vector3 _v3, float _y) => new Vector3( _v3.x, _y, _v3.z );
+        
         public static Vector3 WithY(this Vector3 _v3, int _y) => new Vector3( _v3.x, _y, _v3.z );
+        public static void WithY_ref(this ref Vector3 _v3, int _y) => new Vector3( _v3.x, _y, _v3.z );
+        
         public static Vector3 WithY(this Vector3 _v3, byte _y) => new Vector3( _v3.x, _y, _v3.z );
+        public static void WithY_ref(this ref Vector3 _v3, byte _y) => new Vector3( _v3.x, _y, _v3.z );
 
         public static Vector3 WithZ(this Vector3 _v3, float _z) => new Vector3( _v3.x, _v3.y, _z );
+        public static void WithZ_ref(this ref Vector3 _v3, float _z) => new Vector3( _v3.x, _v3.y, _z );
+        
         public static Vector3 WithZ(this Vector3 _v3, int _z) => new Vector3( _v3.x, _v3.y, _z );
+        public static void WithZ_ref(this ref Vector3 _v3, int _z) => new Vector3( _v3.x, _v3.y, _z );
+        
         public static Vector3 WithZ(this Vector3 _v3, byte _z) => new Vector3( _v3.x, _v3.y, _z );
+        public static void WithZ_ref(this ref Vector3 _v3, byte _z) => new Vector3( _v3.x, _v3.y, _z );
         #endregion
 
         #region Doubles
         public static Vector3 WithXY(this Vector3 _v3, float _x, float _y) => new Vector3( _x, _y, _v3.z );
+        public static void WithXY_ref(this ref Vector3 _v3, float _x, float _y) => new Vector3( _x, _y, _v3.z );
+        
         public static Vector3 WithXY(this Vector3 _v3, int _x, int _y) => new Vector3( _x, _y, _v3.z );
+        public static void WithXY_ref(this ref Vector3 _v3, int _x, int _y) => new Vector3( _x, _y, _v3.z );
+        
         public static Vector3 WithXY(this Vector3 _v3, byte _x, byte _y) => new Vector3( _x, _y, _v3.z );
+        public static void WithXY_ref(this ref Vector3 _v3, byte _x, byte _y) => new Vector3( _x, _y, _v3.z );
 
         public static Vector3 WithXZ(this Vector3 _v3, float _x, float _z) => new Vector3( _x, _v3.y, _z );
+        public static void WithXZ_ref(this ref Vector3 _v3, float _x, float _z) => new Vector3( _x, _v3.y, _z );
+        
         public static Vector3 WithXZ(this Vector3 _v3, int _x, int _z) => new Vector3( _x, _v3.y, _z );
+        public static void WithXZ_ref(this ref Vector3 _v3, int _x, int _z) => new Vector3( _x, _v3.y, _z );
+        
         public static Vector3 WithXZ(this Vector3 _v3, byte _x, byte _z) => new Vector3( _x, _v3.y, _z );
+        public static void WithXZ_ref(this ref Vector3 _v3, byte _x, byte _z) => new Vector3( _x, _v3.y, _z );
 
         public static Vector3 WithYZ(this Vector3 _v3, float _y, float _z) => new Vector3( _v3.x, _y, _z );
+        public static void WithYZ_ref(this ref Vector3 _v3, float _y, float _z) => new Vector3( _v3.x, _y, _z );
+        
         public static Vector3 WithYZ(this Vector3 _v3, int _y, int _z) => new Vector3( _v3.x, _y, _z );
+        public static void WithYZ_ref(this ref Vector3 _v3, int _y, int _z) => new Vector3( _v3.x, _y, _z );
+        
         public static Vector3 WithYZ(this Vector3 _v3, byte _y, byte _z) => new Vector3( _v3.x, _y, _z );
+        public static void WithYZ_ref(this ref Vector3 _v3, byte _y, byte _z) => new Vector3( _v3.x, _y, _z );
         #endregion
 
         #endregion
