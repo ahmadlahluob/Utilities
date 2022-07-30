@@ -80,13 +80,5 @@ namespace RiseOfArabs.Utilities.NumbersExtensions
             return (byte)(_result < _min ? _portalTo : _result);
         }
         #endregion
-
-        #region Randoms
-        /// <returns>Random value from 0 to 1</returns>
-        public static byte GetRandom01() => (byte)Random.Range( 0, 2 );
-
-        /// <returns>Random value from 0 to 100</returns>
-        public static byte GetRandomPercent() => (byte)Random.Range( 0, 101 );
-        #endregion
     }
 }

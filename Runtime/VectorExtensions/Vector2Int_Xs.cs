@@ -1,5 +1,5 @@
-using UnityEngine;
 using RiseOfArabs.Utilities.NumbersExtensions;
+using UnityEngine;
 using static RiseOfArabs.Utilities.NumbersExtensions.Int_Xs;
 
 namespace RiseOfArabs.Utilities.VectorsExtensions
@@ -31,7 +31,7 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
         #endregion
 
         #region Shortcuts
-        
+
         #region Nullables
         public static Vector2Int With(this Vector2Int _v2, int? _x, int? _y) => new Vector2Int( _x ?? _v2.x, _y ?? _v2.y );
         public static Vector2Int With(this Vector2Int _v2, byte? _x, byte? _y) => new Vector2Int( _x ?? _v2.x, _y ?? _v2.y );
@@ -64,17 +64,6 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
 
                 -_v2,
             };
-        #endregion
-
-        #region Randoms
-        /// <summary>Returns a random vector with values from -1 to 1</summary>
-        public static Vector2Int RandomNP => new Vector2Int( GetRandomNP(), GetRandomNP() );
-
-        /// <summary>Returns a random vector with values from 0 to 1</summary>
-        public static Vector2Int Random01 => new Vector2Int( GetRandom01(), GetRandom01() );
-
-        /// <summary>Returns a random vector with values from 0 to 100</summary>
-        public static Vector2Int RandomPercent => new Vector2Int( GetRandomPercent(), GetRandomPercent() );
         #endregion
     }
 }

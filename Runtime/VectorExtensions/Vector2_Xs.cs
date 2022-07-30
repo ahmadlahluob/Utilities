@@ -79,16 +79,5 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
                 -_v2,
             };
         #endregion
-
-        #region Randoms
-        /// <summary>Returns a random vector with values from -1 to 1</summary>
-        public static Vector2 RandomNP => new Vector2( GetRandomNP(), GetRandomNP() );
-
-        /// <summary>Returns a random vector with values from 0 to 1</summary>
-        public static Vector2 Random01 => new Vector2( GetRandom01(), GetRandom01() );
-
-        /// <summary>Returns a random vector with values from 0 to 100</summary>
-        public static Vector2 RandomPercent => new Vector2( GetRandomPercent(), GetRandomPercent() );
-        #endregion
     }
 }

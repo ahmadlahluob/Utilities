@@ -91,16 +91,5 @@ namespace RiseOfArabs.Utilities.NumbersExtensions
             return _result < _min ? _portalTo : _result;
         }
         #endregion
-
-        #region Randoms
-        /// <returns>Random value from -1 to 1</returns>
-        public static float GetRandomNP() => Random.Range( -1f, 1f );
-
-        /// <returns>Random value from 0 to 1</returns>
-        public static float GetRandom01() => Random.Range( 0f, 1f );
-
-        /// <returns>Random value from 0 to 100</returns>
-        public static float GetRandomPercent() => Random.Range( 0f, 100f );
-        #endregion
     }
 }
