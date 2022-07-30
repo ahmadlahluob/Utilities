@@ -34,7 +34,7 @@ Collection of extension methods to make your development journey easier.
 
 ## Installation
 
-> Install via unity's Package manager using git url.
+> Install via unity's Package manager using git url (Make sure you have Git Software installed on your machine).
 > 
 > <!-- or via our downloader ScriptableObject which can be found this prjoect's asset store asset. -->
 
