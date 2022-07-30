@@ -41,69 +41,115 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
         
         #region Nullables
         public static Vector4 With(this Vector4 _v4, float? _x, float? _y, float? _z, float? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
-        public static void With_ref(this ref Vector4 _v4, float? _x, float? _y, float? _z, float? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
-        
         public static Vector4 With(this Vector4 _v4, int? _x, int? _y, int? _z, int? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
-        public static void With_ref(this ref Vector4 _v4, int? _x, int? _y, int? _z, int? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
-        
         public static Vector4 With(this Vector4 _v4, byte? _x, byte? _y, byte? _z, byte? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
+        public static void With_ref(this ref Vector4 _v4, float? _x, float? _y, float? _z, float? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
+        public static void With_ref(this ref Vector4 _v4, int? _x, int? _y, int? _z, int? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );
         public static void With_ref(this ref Vector4 _v4, byte? _x, byte? _y, byte? _z, byte? _w) => new Vector4( _x ?? _v4.x, _y ?? _v4.y, _z ?? _v4.z, _w ?? _v4.w );        
         #endregion
 
         #region Singles
-        public static Vector4 WithX(this Vector4 _v4, float _x) => new Vector4( _x, _v4.y, _v4.z );
-        public static void WithX_ref(this ref Vector4 _v4, float _x) => new Vector4( _x, _v4.y, _v4.z );
+        public static Vector4 WithX(this Vector4 _v4, float _x) => new Vector4( _x, _v4.y, _v4.z, _v4.w );
+        public static Vector4 WithX(this Vector4 _v4, int _x) => new Vector4( _x, _v4.y, _v4.z, _v4.w );
+        public static Vector4 WithX(this Vector4 _v4, byte _x) => new Vector4( _x, _v4.y, _v4.z , _v4.w );
+        public static void WithX_ref(this ref Vector4 _v4, float _x) => new Vector4( _x, _v4.y, _v4.z, _v4.w );
+        public static void WithX_ref(this ref Vector4 _v4, int _x) => new Vector4( _x, _v4.y, _v4.z, _v4.w );
+        public static void WithX_ref(this ref Vector4 _v4, byte _x) => new Vector4( _x, _v4.y, _v4.z , _v4.w );
         
-        public static Vector4 WithX(this Vector4 _v4, int _x) => new Vector4( _x, _v4.y, _v4.z );
-        public static void WithX_ref(this ref Vector4 _v4, int _x) => new Vector4( _x, _v4.y, _v4.z );
+        public static Vector4 WithY(this Vector4 _v4, float _y) => new Vector4( _v4.x, _y, _v4.z, _v4.w );
+        public static Vector4 WithY(this Vector4 _v4, int _y) => new Vector4( _v4.x, _y, _v4.z , _v4.w );
+        public static Vector4 WithY(this Vector4 _v4, byte _y) => new Vector4( _v4.x, _y, _v4.z , _v4.w );
+        public static void WithY_ref(this ref Vector4 _v4, float _y) => new Vector4( _v4.x, _y, _v4.z, _v4.w );
+        public static void WithY_ref(this ref Vector4 _v4, int _y) => new Vector4( _v4.x, _y, _v4.z , _v4.w );
+        public static void WithY_ref(this ref Vector4 _v4, byte _y) => new Vector4( _v4.x, _y, _v4.z , _v4.w );
         
-        public static Vector4 WithX(this Vector4 _v4, byte _x) => new Vector4( _x, _v4.y, _v4.z );
-        public static void WithX_ref(this ref Vector4 _v4, byte _x) => new Vector4( _x, _v4.y, _v4.z );
-
-        public static Vector4 WithY(this Vector4 _v4, float _y) => new Vector4( _v4.x, _y, _v4.z );
-        public static void WithY_ref(this ref Vector4 _v4, float _y) => new Vector4( _v4.x, _y, _v4.z );
+        public static Vector4 WithZ(this Vector4 _v4, float _z) => new Vector4( _v4.x, _v4.y, _z, _v4.w );
+        public static Vector4 WithZ(this Vector4 _v4, int _z) => new Vector4( _v4.x, _v4.y, _z , _v4.w );
+        public static Vector4 WithZ(this Vector4 _v4, byte _z) => new Vector4( _v4.x, _v4.y, _z , _v4.w );
+        public static void WithZ_ref(this ref Vector4 _v4, float _z) => new Vector4( _v4.x, _v4.y, _z, _v4.w );
+        public static void WithZ_ref(this ref Vector4 _v4, int _z) => new Vector4( _v4.x, _v4.y, _z , _v4.w );
+        public static void WithZ_ref(this ref Vector4 _v4, byte _z) => new Vector4( _v4.x, _v4.y, _z , _v4.w );
         
-        public static Vector4 WithY(this Vector4 _v4, int _y) => new Vector4( _v4.x, _y, _v4.z );
-        public static void WithY_ref(this ref Vector4 _v4, int _y) => new Vector4( _v4.x, _y, _v4.z );
-        
-        public static Vector4 WithY(this Vector4 _v4, byte _y) => new Vector4( _v4.x, _y, _v4.z );
-        public static void WithY_ref(this ref Vector4 _v4, byte _y) => new Vector4( _v4.x, _y, _v4.z );
-
-        public static Vector4 WithZ(this Vector4 _v4, float _z) => new Vector4( _v4.x, _v4.y, _z );
-        public static void WithZ_ref(this ref Vector4 _v4, float _z) => new Vector4( _v4.x, _v4.y, _z );
-        public static Vector4 WithZ(this Vector4 _v4, int _z) => new Vector4( _v4.x, _v4.y, _z );
-        public static void WithZ_ref(this ref Vector4 _v4, int _z) => new Vector4( _v4.x, _v4.y, _z );
-        public static Vector4 WithZ(this Vector4 _v4, byte _z) => new Vector4( _v4.x, _v4.y, _z );
-        public static void WithZ_ref(this ref Vector4 _v4, byte _z) => new Vector4( _v4.x, _v4.y, _z );
+        public static Vector4 WithW(this Vector4 _v4, float _w) => new Vector4( _v4.x, _v4.y, _v4.z, _w );
+        public static Vector4 WithW(this Vector4 _v4, int _w) => new Vector4( _v4.x, _v4.y, _v4.z, _w );
+        public static Vector4 WithW(this Vector4 _v4, byte _w) => new Vector4( _v4.x, _v4.y, _v4.z, _w );
+        public static void WithW_ref(this ref Vector4 _v4, float _w) => new Vector4( _v4.x, _v4.y, _v4.z, _w );
+        public static void WithW_ref(this ref Vector4 _v4, int _w) => new Vector4( _v4.x, _v4.y, _v4.z, _w );
+        public static void WithW_ref(this ref Vector4 _v4, byte _w) => new Vector4( _v4.x, _v4.y, _v4.z, _w );
         #endregion
 
         #region Doubles
-        public static Vector4 WithXY(this Vector4 _v4, float _x, float _y) => new Vector4( _x, _y, _v4.z );
-        public static void WithXY_ref(this ref Vector4 _v4, float _x, float _y) => new Vector4( _x, _y, _v4.z );
+        public static Vector4 WithXY(this Vector4 _v4, float _x, float _y) => new Vector4( _x, _y, _v4.z , _v4.w );
+        public static Vector4 WithXY(this Vector4 _v4, int _x, int _y) => new Vector4( _x, _y, _v4.z , _v4.w );
+        public static Vector4 WithXY(this Vector4 _v4, byte _x, byte _y) => new Vector4( _x, _y, _v4.z , _v4.w );
+        public static void WithXY_ref(this ref Vector4 _v4, float _x, float _y) => new Vector4( _x, _y, _v4.z , _v4.w );
+        public static void WithXY_ref(this ref Vector4 _v4, int _x, int _y) => new Vector4( _x, _y, _v4.z , _v4.w );
+        public static void WithXY_ref(this ref Vector4 _v4, byte _x, byte _y) => new Vector4( _x, _y, _v4.z , _v4.w );
         
-        public static Vector4 WithXY(this Vector4 _v4, int _x, int _y) => new Vector4( _x, _y, _v4.z );
-        public static void WithXY_ref(this ref Vector4 _v4, int _x, int _y) => new Vector4( _x, _y, _v4.z );
+        public static Vector4 WithXZ(this Vector4 _v4, float _x, float _z) => new Vector4( _x, _v4.y, _z , _v4.w );
+        public static Vector4 WithXZ(this Vector4 _v4, int _x, int _z) => new Vector4( _x, _v4.y, _z , _v4.w );
+        public static Vector4 WithXZ(this Vector4 _v4, byte _x, byte _z) => new Vector4( _x, _v4.y, _z , _v4.w );
+        public static void WithXZ_ref(this ref Vector4 _v4, float _x, float _z) => new Vector4( _x, _v4.y, _z , _v4.w );
+        public static void WithXZ_ref(this ref Vector4 _v4, int _x, int _z) => new Vector4( _x, _v4.y, _z , _v4.w );
+        public static void WithXZ_ref(this ref Vector4 _v4, byte _x, byte _z) => new Vector4( _x, _v4.y, _z , _v4.w );
         
-        public static Vector4 WithXY(this Vector4 _v4, byte _x, byte _y) => new Vector4( _x, _y, _v4.z );
-        public static void WithXY_ref(this ref Vector4 _v4, byte _x, byte _y) => new Vector4( _x, _y, _v4.z );
+        public static Vector4 WithXW(this Vector4 _v4, float _x, float _w) => new Vector4( _x, _v4.y, _v4.z , _w );
+        public static Vector4 WithXW(this Vector4 _v4, int _x, int _w) => new Vector4( _x, _v4.y, _v4.z , _w );
+        public static Vector4 WithXW(this Vector4 _v4, byte _x, byte _w) => new Vector4( _x, _v4.y, _v4.z , _w );
+        public static void WithXW_ref(this ref Vector4 _v4, float _x, float _w) => new Vector4( _x, _v4.y, _v4.z , _w );
+        public static void WithXW_ref(this ref Vector4 _v4, int _x, int _w) => new Vector4( _x, _v4.y, _v4.z , _w );
+        public static void WithXW_ref(this ref Vector4 _v4, byte _x, byte _w) => new Vector4( _x, _v4.y, _v4.z , _w );
+        
+        public static Vector4 WithYZ(this Vector4 _v4, float _y, float _z) => new Vector4( _v4.x, _y, _z , _v4.w );
+        public static Vector4 WithYZ(this Vector4 _v4, int _y, int _z) => new Vector4( _v4.x, _y, _z , _v4.w );
+        public static Vector4 WithYZ(this Vector4 _v4, byte _y, byte _z) => new Vector4( _v4.x, _y, _z , _v4.w );
+        public static void WithYZ_ref(this ref Vector4 _v4, float _y, float _z) => new Vector4( _v4.x, _y, _z , _v4.w );
+        public static void WithYZ_ref(this ref Vector4 _v4, int _y, int _z) => new Vector4( _v4.x, _y, _z , _v4.w );
+        public static void WithYZ_ref(this ref Vector4 _v4, byte _y, byte _z) => new Vector4( _v4.x, _y, _z , _v4.w );
+        
+        public static Vector4 WithYW(this Vector4 _v4, float _y, float _w) => new Vector4( _v4.x, _y, _v4.z , _w );
+        public static Vector4 WithYW(this Vector4 _v4, int _y, int _w) => new Vector4( _v4.x, _y, _v4.z , _w );
+        public static Vector4 WithYW(this Vector4 _v4, byte _y, byte _w) => new Vector4( _v4.x, _y, _v4.z , _w );
+        public static void WithYW_ref(this ref Vector4 _v4, float _y, float _w) => new Vector4( _v4.x, _y, _v4.z , _w );
+        public static void WithYW_ref(this ref Vector4 _v4, int _y, int _w) => new Vector4( _v4.x, _y, _v4.z , _w );
+        public static void WithYW_ref(this ref Vector4 _v4, byte _y, byte _w) => new Vector4( _v4.x, _y, _v4.z , _w );
+        
+        public static Vector4 WithZW(this Vector4 _v4, float _z, float _w) => new Vector4( _v4.x, _v4.y, _z , _w );
+        public static Vector4 WithZW(this Vector4 _v4, int _z, int _w) => new Vector4( _v4.x, _v4.y, _z , _w );
+        public static Vector4 WithZW(this Vector4 _v4, byte _z, byte _w) => new Vector4( _v4.x, _v4.y, _z , _w );
+        public static void WithZW_ref(this ref Vector4 _v4, float _z, float _w) => new Vector4( _v4.x, _v4.y, _z , _w );
+        public static void WithZW_ref(this ref Vector4 _v4, int _z, int _w) => new Vector4( _v4.x, _v4.y, _z , _w );
+        public static void WithZW_ref(this ref Vector4 _v4, byte _z, byte _w) => new Vector4( _v4.x, _v4.y, _z , _w );
+        #endregion
 
-        public static Vector4 WithXZ(this Vector4 _v4, float _x, float _z) => new Vector4( _x, _v4.y, _z );
-        public static void WithXZ_ref(this ref Vector4 _v4, float _x, float _z) => new Vector4( _x, _v4.y, _z );
-        
-        public static Vector4 WithXZ(this Vector4 _v4, int _x, int _z) => new Vector4( _x, _v4.y, _z );
-        public static void WithXZ_ref(this ref Vector4 _v4, int _x, int _z) => new Vector4( _x, _v4.y, _z );
-        
-        public static Vector4 WithXZ(this Vector4 _v4, byte _x, byte _z) => new Vector4( _x, _v4.y, _z );
-        public static void WithXZ_ref(this ref Vector4 _v4, byte _x, byte _z) => new Vector4( _x, _v4.y, _z );
+        #region Triples
+        public static Vector4 WithXYZ(this Vector4 _v4, float _x, float _y, float _z) => new Vector4( _x, _y, _z , _v4.w );
+        public static Vector4 WithXYZ(this Vector4 _v4, int _x, int _y, int _z) => new Vector4( _x, _y, _z , _v4.w );
+        public static Vector4 WithXYZ(this Vector4 _v4, byte _x, byte _y, byte _z) => new Vector4( _x, _y, _z , _v4.w );
+        public static void WithXYZ_ref(this ref Vector4 _v4, float _x, float _y, float _z) => new Vector4( _x, _y, _z , _v4.w );
+        public static void WithXYZ_ref(this ref Vector4 _v4, int _x, int _y, int _z) => new Vector4( _x, _y, _z , _v4.w );
+        public static void WithXYZ_ref(this ref Vector4 _v4, byte _x, byte _y, byte _z) => new Vector4( _x, _y, _z , _v4.w );
 
-        public static Vector4 WithYZ(this Vector4 _v4, float _y, float _z) => new Vector4( _v4.x, _y, _z );
-        public static void WithYZ_ref(this ref Vector4 _v4, float _y, float _z) => new Vector4( _v4.x, _y, _z );
-        
-        public static Vector4 WithYZ(this Vector4 _v4, int _y, int _z) => new Vector4( _v4.x, _y, _z );
-        public static void WithYZ_ref(this ref Vector4 _v4, int _y, int _z) => new Vector4( _v4.x, _y, _z );
-        
-        public static Vector4 WithYZ(this Vector4 _v4, byte _y, byte _z) => new Vector4( _v4.x, _y, _z );
-        public static void WithYZ_ref(this ref Vector4 _v4, byte _y, byte _z) => new Vector4( _v4.x, _y, _z );
+        public static Vector4 WithXYW(this Vector4 _v4, float _x, float _y, float _w) => new Vector4( _x, _y, _v4.z , _w );
+        public static Vector4 WithXYW(this Vector4 _v4, int _x, int _y, int _w) => new Vector4( _x, _y, _v4.z , _w );
+        public static Vector4 WithXYW(this Vector4 _v4, byte _x, byte _y, byte _w) => new Vector4( _x, _y, _v4.z , _w );
+        public static void WithXYW_ref(this ref Vector4 _v4, float _x, float _y, float _w) => new Vector4( _x, _y, _v4.z , _w );
+        public static void WithXYW_ref(this ref Vector4 _v4, int _x, int _y, int _w) => new Vector4( _x, _y, _v4.z , _w );
+        public static void WithXYW_ref(this ref Vector4 _v4, byte _x, byte _y, byte _w) => new Vector4( _x, _y, _v4.z , _w );
+
+        public static Vector4 WithXZW(this Vector4 _v4, float _x, float _z, float _w) => new Vector4( _x, _v4.y, _z , _w );
+        public static Vector4 WithXZW(this Vector4 _v4, int _x, int _z, int _w) => new Vector4( _x, _v4.y, _z , _w );
+        public static Vector4 WithXZW(this Vector4 _v4, byte _x, byte _z, byte _w) => new Vector4( _x, _v4.y, _z , _w );
+        public static void WithXZW_ref(this ref Vector4 _v4, float _x, float _z, float _w) => new Vector4( _x, _v4.y, _z , _w );
+        public static void WithXZW_ref(this ref Vector4 _v4, int _x, int _z, int _w) => new Vector4( _x, _v4.y, _z , _w );
+        public static void WithXZW_ref(this ref Vector4 _v4, byte _x, byte _z, byte _w) => new Vector4( _x, _v4.y, _z , _w );
+
+        public static Vector4 WithYZW(this Vector4 _v4, float _y, float _z, float _w) => new Vector4( _v4.x, _y, _z , _w );
+        public static Vector4 WithYZW(this Vector4 _v4, int _y, int _z, int _w) => new Vector4( _v4.x, _y, _z , _w );
+        public static Vector4 WithYZW(this Vector4 _v4, byte _y, byte _z, byte _w) => new Vector4( _v4.x, _y, _z , _w );
+        public static void WithYZW_ref(this ref Vector4 _v4, float _y, float _z, float _w) => new Vector4( _v4.x, _y, _z , _w );
+        public static void WithYZW_ref(this ref Vector4 _v4, int _y, int _z, int _w) => new Vector4( _v4.x, _y, _z , _w );
+        public static void WithYZW_ref(this ref Vector4 _v4, byte _y, byte _z, byte _w) => new Vector4( _v4.x, _y, _z , _w );
         #endregion
 
         #endregion

@@ -33,49 +33,40 @@ namespace RiseOfArabs.Utilities.VectorsExtensions
         
         #region Nullables
         public static Vector3Int With(this Vector3Int _v3, int? _x, int? _y, int? _z) => new Vector3Int( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
-        public static void With_ref(this ref Vector3Int _v3, int? _x, int? _y, int? _z) => new Vector3Int( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
-        
         public static Vector3Int With(this Vector3Int _v3, byte? _x, byte? _y, byte? _z) => new Vector3Int( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
+        public static void With_ref(this ref Vector3Int _v3, int? _x, int? _y, int? _z) => new Vector3Int( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
         public static void With_ref(this ref Vector3Int _v3, byte? _x, byte? _y, byte? _z) => new Vector3Int( _x ?? _v3.x, _y ?? _v3.y, _z ?? _v3.z );
         #endregion
 
         #region Singles
         public static Vector3Int WithX(this Vector3Int _v3, int _x) => new Vector3Int( _x, _v3.y, _v3.z );
-        public static void WithX_ref(this ref Vector3Int _v3, int _x) => new Vector3Int( _x, _v3.y, _v3.z );
-        
         public static Vector3Int WithX(this Vector3Int _v3, byte _x) => new Vector3Int( _x, _v3.y, _v3.z );
-        public static void WithX_ref(this ref Vector3Int _v3, byte _x) => new Vector3Int( _x, _v3.y, _v3.z );
-
         public static Vector3Int WithY(this Vector3Int _v3, int _y) => new Vector3Int( _v3.x, _y, _v3.z );
+        public static void WithX_ref(this ref Vector3Int _v3, int _x) => new Vector3Int( _x, _v3.y, _v3.z );
+        public static void WithX_ref(this ref Vector3Int _v3, byte _x) => new Vector3Int( _x, _v3.y, _v3.z );
         public static void WithY_ref(this ref Vector3Int _v3, int _y) => new Vector3Int( _v3.x, _y, _v3.z );
         
         public static Vector3Int WithY(this Vector3Int _v3, byte _y) => new Vector3Int( _v3.x, _y, _v3.z );
-        public static void WithY_ref(this ref Vector3Int _v3, byte _y) => new Vector3Int( _v3.x, _y, _v3.z );
-
         public static Vector3Int WithZ(this Vector3Int _v3, int _z) => new Vector3Int( _v3.x, _v3.y, _z );
-        public static void WithZ_ref(this ref Vector3Int _v3, int _z) => new Vector3Int( _v3.x, _v3.y, _z );
-        
         public static Vector3Int WithZ(this Vector3Int _v3, byte _z) => new Vector3Int( _v3.x, _v3.y, _z );
+        public static void WithY_ref(this ref Vector3Int _v3, byte _y) => new Vector3Int( _v3.x, _y, _v3.z );
+        public static void WithZ_ref(this ref Vector3Int _v3, int _z) => new Vector3Int( _v3.x, _v3.y, _z );
         public static void WithZ_ref(this ref Vector3Int _v3, byte _z) => new Vector3Int( _v3.x, _v3.y, _z );
         #endregion
 
         #region Doubles
         public static Vector3Int WithXY(this Vector3Int _v3, int _x, int _y) => new Vector3Int( _x, _y, _v3.z );
-        public static void WithXY_ref(this ref Vector3Int _v3, int _x, int _y) => new Vector3Int( _x, _y, _v3.z );
-        
         public static Vector3Int WithXY(this Vector3Int _v3, byte _x, byte _y) => new Vector3Int( _x, _y, _v3.z );
-        public static void WithXY_ref(this ref Vector3Int _v3, byte _x, byte _y) => new Vector3Int( _x, _y, _v3.z );
-
         public static Vector3Int WithXZ(this Vector3Int _v3, int _x, int _z) => new Vector3Int( _x, _v3.y, _z );
+        public static void WithXY_ref(this ref Vector3Int _v3, int _x, int _y) => new Vector3Int( _x, _y, _v3.z );
+        public static void WithXY_ref(this ref Vector3Int _v3, byte _x, byte _y) => new Vector3Int( _x, _y, _v3.z );
         public static void WithXZ_ref(this ref Vector3Int _v3, int _x, int _z) => new Vector3Int( _x, _v3.y, _z );
         
         public static Vector3Int WithXZ(this Vector3Int _v3, byte _x, byte _z) => new Vector3Int( _x, _v3.y, _z );
-        public static void WithXZ_ref(this ref Vector3Int _v3, byte _x, byte _z) => new Vector3Int( _x, _v3.y, _z );
-
         public static Vector3Int WithYZ(this Vector3Int _v3, int _y, int _z) => new Vector3Int( _v3.x, _y, _z );
-        public static void WithYZ_ref(this ref Vector3Int _v3, int _y, int _z) => new Vector3Int( _v3.x, _y, _z );
-        
         public static Vector3Int WithYZ(this Vector3Int _v3, byte _y, byte _z) => new Vector3Int( _v3.x, _y, _z );
+        public static void WithXZ_ref(this ref Vector3Int _v3, byte _x, byte _z) => new Vector3Int( _x, _v3.y, _z );
+        public static void WithYZ_ref(this ref Vector3Int _v3, int _y, int _z) => new Vector3Int( _v3.x, _y, _z );
         public static void WithYZ_ref(this ref Vector3Int _v3, byte _y, byte _z) => new Vector3Int( _v3.x, _y, _z );
         #endregion
 
