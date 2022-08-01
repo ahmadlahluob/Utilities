@@ -5,8 +5,8 @@
 Collection of extension methods to make your development journey easier.
 
 [![ROA](https://img.shields.io/badge/Rise%20of%20Arabs-DevTools-orange)](https://github.com/Rise-of-Arabs)
-[![Project license](https://img.shields.io/github/license/Rise-of-Arabs/Utilities.svg?style=flat-square)](LICENSE)
-
+  
+[![Project license](https://img.shields.io/github/license/Rise-of-Arabs/Utilities.svg?style=flat-square)](LICENSE.md)
 [![Pull Requests welcome](https://img.shields.io/badge/Pull%20requests-welcome-ff69b4.svg?style=plastic)](https://github.com/Rise-of-Arabs/Utilities/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 
@@ -20,7 +20,6 @@ Collection of extension methods to make your development journey easier.
 - [Usage](#usage)
 - [Support](#support)
 - [Authors & contributors](#authors--contributors)
-- [License](#license)
 
 </details>
 
@@ -54,8 +53,3 @@ Collection of extension methods to make your development journey easier.
 
 The original setup of this repository is by [Alpha dev](https://github.com/The-Alpha-dev).
 For a full list of all authors and contributors, see [the contributors page](https://github.com/Rise-of-Arabs/Utilities/contributors).
-
-## License
-
-This project is licensed under the **MIT license**.
-See [LICENSE](LICENSE) for more information.
