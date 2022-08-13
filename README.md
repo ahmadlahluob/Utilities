@@ -4,9 +4,9 @@
 # Utilities
 Collection of extension methods to make your development journey easier.
 
-[![ROA](https://img.shields.io/badge/Rise%20of%20Arabs-DevTools-orange)](https://github.com/Rise-of-Arabs)
+[![ROA](https://img.shields.io/badge/Rise%20of%20Arabs-DevTools-orange?style=flat-square)](https://github.com/Rise-of-Arabs)
   
-[![Project license](https://img.shields.io/github/license/Rise-of-Arabs/Utilities.svg?style=flat-square)](LICENSE.md)
+[![Project license](https://img.shields.io/github/license/Rise-of-Arabs/Utilities.svg?style=plastic)](LICENSE.md)
 [![Pull Requests welcome](https://img.shields.io/badge/Pull%20requests-welcome-ff69b4.svg?style=plastic)](https://github.com/Rise-of-Arabs/Utilities/issues?q=is%3Aissue+is%3Aopen+label%3A%22help+wanted%22)
 
 
