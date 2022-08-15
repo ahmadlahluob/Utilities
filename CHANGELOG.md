@@ -1,5 +1,9 @@
 # **Changelog**
 
+### [0.7.1] - 15/8/2022
+
+- Added Tests_Xs extension methods class
+
 ### [0.7.0] - 13/8/2022
 
 - Added MonoBehaviour_Xs extension methods class
