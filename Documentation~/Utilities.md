@@ -1,15 +1,9 @@
 # Utilities Documentation
 
-- [About us](#about-us)
-- [About Utilities](#about-utilities)
+- [About us](https://github.com/Rise-of-Arabs/Rise-of-Arabs)
 - [Installation](#installation)
 - [Usage](#usage)
 
-#
-## About Us
-
-#
-## About Utilities
 #
 ## Installation 
 
