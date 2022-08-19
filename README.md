@@ -17,6 +17,7 @@ Collection of extension methods to make your development journey easier.
 
 - [About](#about)
 - [Installation](#installation)
+- [Documentaions](https://github.com/Rise-of-Arabs/Utilities/tree/main/Documentation~/Utilities.md)
 - [Usage](#usage)
 - [Support](#support)
 - [Authors & contributors](#authors--contributors)
