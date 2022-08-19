@@ -1,6 +1,6 @@
 {
   "name": "com.riseofarabs.devtools.utilities",
-  "version": "0.6.2",
+  "version": "0.7.1",
   "displayName": "Utilities",
   "description": "Collection of extension methods to make your developement journey easier.",
   "unity": "2019.4",
@@ -10,7 +10,7 @@
   "dependencies": {},
   "author": {
     "name": "Rise of Arabs",
-    "email": "riseofarabs.contact@google.com"
+    "email": "riseofarabs.contact@gmail.com"
   },
   "keywords": [
     "Utilities",
